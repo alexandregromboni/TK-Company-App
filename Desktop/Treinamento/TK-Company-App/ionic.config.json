@@ -1,0 +1,7 @@
+{
+  "name": "TK-Company-App",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
