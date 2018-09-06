@@ -1,17 +1,20 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <img ion-right src="assets/imgs/logo.png" class="navbarLogo" />
+    <ion-title>Pagina Inicial</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <h2>Bem Vindo(a) {{userDetails.name}}</h2>
+  <h3>Email: {{userDetails.email}}</h3>
+
+  <!-- <ion-card *ngFor="let item of dataSet">
+    <ion-card-content>
+      <p [innerHTML]="item.feed | linky"></p>
+      <span>{{ converTime(item.created) | amTimeAgo}}</span>
+    </ion-card-content>
+  </ion-card> -->
+
+  <button ion-button color="primary" (click)="logout()">Sair</button>
 </ion-content>
